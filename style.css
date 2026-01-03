@@ -131,3 +131,44 @@ footer {
   font-size: 0.8rem;
   color: #888;
 }
+
+/* FLOATING SOCIAL ICONS */
+.floating-social {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 18px;
+  padding: 12px 18px;
+  background: rgba(20, 10, 40, 0.55);
+  backdrop-filter: blur(12px);
+  border-radius: 40px;
+  border: 1px solid rgba(140, 90, 255, 0.4);
+  box-shadow: 0 0 30px rgba(100, 0, 255, 0.4);
+  z-index: 9999;
+}
+
+.floating-social a img {
+  width: 26px;
+  height: 26px;
+  filter: drop-shadow(0 0 6px #7a4bff);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.floating-social a:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 12px #00ccff);
+}
+
+/* Desktop adjustment */
+@media (min-width: 768px) {
+  .floating-social {
+    left: auto;
+    right: 30px;
+    bottom: 40px;
+    transform: none;
+    flex-direction: column;
+    border-radius: 30px;
+  }
+}
