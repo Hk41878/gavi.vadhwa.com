@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: #05010d;
+  color: #e6e6ff;
+  overflow-x: hidden;
+}
+
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top, #4b00ff55, transparent 40%),
+    radial-gradient(circle at bottom, #00aaff33, transparent 40%);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #9b5cff;
+  text-shadow: 0 0 15px #6a00ff;
+}
+
+.tagline {
+  margin-top: 10px;
+  color: #7fd6ff;
+  font-size: 0.9rem;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #b58cff;
+  margin-bottom: 20px;
+  border-left: 4px solid #6a00ff;
+  padding-left: 10px;
+}
+
+.about p {
+  line-height: 1.7;
+  color: #ccccff;
+}
+
+.games ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.games li {
+  background: #0c0620;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #3a1b8a;
+  transition: transform 0.3s;
+}
+
+.games li:hover {
+  transform: translateY(-5px);
+}
+
+.blog {
+  display: grid;
+  gap: 20px;
+}
+
+.blog-card {
+  background: #0c0620;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #3a1b8a;
+}
+
+.blog-card h3 {
+  color: #7fd6ff;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 0.9rem;
+  color: #cfcfff;
+}
+
+.join {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #6a00ff, #0099ff);
+  box-shadow: 0 0 15px #6a00ff77;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00aaffaa;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.8rem;
+  color: #888;
+}
