@@ -1,5 +1,4 @@
-const discordBtn = document.getElementById("discordBtn");
+// No popup needed now because Discord has a proper link
+// Keeping file for future effects if you want
 
-discordBtn.addEventListener("click", () => {
-  alert("Discord Username: justluck12\nSend a request and let's play 🎮");
-});
+console.log("Gavi Vadhwa gamer site loaded 🎮");
